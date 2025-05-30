@@ -29,7 +29,4 @@ RUN curl -L -o actions-runner.tar.gz https://github.com/actions/runner/releases/
     && tar xzf actions-runner.tar.gz \
     && rm actions-runner.tar.gz
 
-# Add entrypoint or your custom configuration here
-
-# Example entrypoint
-ENTRYPOINT ["./run.sh"]
+WORKDIR /github/workspace
