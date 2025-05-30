@@ -15,16 +15,16 @@ docker login ghcr.io -u <your GitHub username here>
 
 ```shell
 docker build \
-    --platform linux/amd64 \
-    --no-cache \
-    --tag ghcr.io/eigenherd/docker-image-github-runner-postman:latest \
-    .
+  --platform linux/amd64 \
+  --no-cache \
+  --tag ghcr.io/eigenherd/docker-image-github-runner-postman:latest \
+  .
 ```
 
 ## Docker Image Push
 
 ```shell
 docker image push \
-    --all-tags \
-    ghcr.io/eigenherd/docker-image-github-runner-postman
+  --all-tags \
+  ghcr.io/eigenherd/docker-image-github-runner-postman
 ```
